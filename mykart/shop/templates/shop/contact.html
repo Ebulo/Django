@@ -1,0 +1,44 @@
+{% extends 'shop/basic.html' %}
+
+{% block title%} Contact {% endblock %}
+{% block alert %}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Holla Welcome!</strong> DON'T WORRY, WE ARE ALWAYS THERE TO HELP YOU OUT
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+{% endblock %}
+
+{% block body %}
+<form action="/shop/contact/" method="post">{% csrf_token %}
+<div class="container">
+    <h5> <b>Fill in The Below Details*</b></h5>
+
+    <div class="form-group">
+            <label for="Name"></label>
+            <input type="text" name="name" class="form-control" id="name" placeholder="Type Your Name*" >
+    </div>
+
+    <div class="form-group">
+            <label for="Email"></label>
+            <input type="email" name="Email" class="form-control" id="Email" placeholder="Your Email*">
+    </div>
+
+
+    <div class="form-group">
+            <label for="phone"></label>
+            <input type="tel" name="phone" class="form-control" id="phone" placeholder="Your Phone Number*">
+    </div>
+
+    <div class="form-group">
+            <label for="desc"></label>
+            <textarea name="desc" class="form-control" id="desc" rows="4" placeholder="How May We Help You">My Issue Is--</textarea>
+    </div>
+
+    <button type="submit" class="btn btn-outline-success">✔Send..</button>
+
+</div>
+</form>
+
+{% endblock %}

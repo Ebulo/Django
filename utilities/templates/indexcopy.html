@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>txt_utils</title>
+</head>
+<body bgcolor="red">
+
+<form action="jio" method="get">
+    Hello Friends How Are You All....Input a message to remove the punctuations from the message<br>
+    <textarea name="text" style='margin: 0px; width: 259px; height: 12px;'>Type your message here.</textarea><br>
+
+    <input type="checkbox" name="removepunc"> Remove Punctuations <br>
+    <input type="checkbox" name="capital">Change to UpperCase<br>
+    <input type="checkbox" name="newlineremover">Remove New Lines<br>
+    <input type="checkbox" name="charcounter"> Count number of charcters you entered
+    <button type="submit">SUBMIT</button>
+
+
+</form>
+<form action="hello" method="post">
+    <h1>Your Name</h1>
+    <input name="text1">
+
+    <input type="radio">Male
+    <input type="radio">Female<br>
+    Enter a temporary password<br>
+    <input type="password"><br>
+    Have I done all the things properly:
+    <input type="checkbox" name="yourname">
+    <button>ENTER</button>
+</form>
+
+Is this your name in capital latters:{{ name }}<button>GO</button>
+</body>
+</html>
